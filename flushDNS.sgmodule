@@ -1,0 +1,9 @@
+#!name=Flush DNS
+#!desc=Flush DNS, show the DNS delay and server.
+#!system=ios
+
+[Script]
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/snelluser/surge/main/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise.circle&color=#00CD00&server=false
+
+[Panel]
+flushDNS = script-name=flushDNS,update-interval=600
